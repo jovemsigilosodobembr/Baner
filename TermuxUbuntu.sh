@@ -1,0 +1,24 @@
+#!/usr/bin/bash
+
+echo ""
+read -p $' \e[0m\e[1;92m Da Um Nome  : \e[0m\e[1;96m\en' user
+echo ""
+echo ""
+echo -e  $g "Please  Wait  A few Minutes...... "
+echo ""
+apt update 
+apt upgrade -y 
+apt install figlet -y
+apt install python
+apt  install python2
+pip install pyfiglet
+pip install termcolor
+pip install ncurses-utils -y 
+pip install ruby -y 
+gem install lolcat 
+figlet -f big Wait | lolcat
+git clone https://github.com/jovemsigilosodobembr/-simple-edit
+sed 's+THBD+'$user'+g' simple-edit/bash.bashrc > /data/data/com.termux/files/usr/etc/bash.bashrc
+sed 's+THBD+'$user'+g' simple-edit/wlc.py > /data/data/com.termux/files/usr/etc/wlc.py
+rm -rf simple-edit
+figlet -f big BDh@Ckers | lolcat
