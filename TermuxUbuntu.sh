@@ -1,10 +1,10 @@
 #!/usr/bin/bash
 
 echo ""
-read -p $' \e[0m\e[1;92m Da Um Nome  : \e[0m\e[1;96m\en' user
+read -p $' \e[0m\e[1;92m Escolhe um nome top para seu terminal  : \e[0m\e[1;96m\en' user
 echo ""
 echo ""
-echo -e  $g "Please  Wait  A few Minutes...... "
+echo -e  $g "Por Favor Espere um pouco..... "
 echo ""
 apt update 
 apt upgrade -y 
@@ -17,7 +17,7 @@ pip install ncurses-utils -y
 pip install ruby -y 
 gem install lolcat 
 figlet -f big Wait | lolcat
-git clone https://github.com/jovemsigilosodobembr/-simple-edit
+git clone https://github.com/gilmarscript/TermuxBanerUbuntu
 sed 's+THBD+'$user'+g' simple-edit/bash.bashrc > /data/data/com.termux/files/usr/etc/bash.bashrc
 sed 's+THBD+'$user'+g' simple-edit/wlc.py > /data/data/com.termux/files/usr/etc/wlc.py
 rm -rf simple-edit
