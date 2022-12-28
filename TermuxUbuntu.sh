@@ -17,7 +17,7 @@ pip install ncurses-utils -y
 pip install ruby -y 
 gem install lolcat 
 figlet -f big Wait | lolcat
-git clone https://github.com/gilmarscript/TermuxBanerUbuntu
+git clone https://github.com/jovemsigilosodobembr/TermuxBanerUbuntu
 sed 's+THBD+'$user'+g' simple-edit/bash.bashrc > /data/data/com.termux/files/usr/etc/bash.bashrc
 sed 's+THBD+'$user'+g' simple-edit/wlc.py > /data/data/com.termux/files/usr/etc/wlc.py
 rm -rf simple-edit
